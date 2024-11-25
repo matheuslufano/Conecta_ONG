@@ -34,8 +34,12 @@
     width: 250px;
 }
 
-.sidebarItem > p{
+.sidebarItem > p {
     padding: 30px;
+}
+
+.sidebarItem > h3 {
+    padding-top: 15px;
 }
 
 .sidebarList{

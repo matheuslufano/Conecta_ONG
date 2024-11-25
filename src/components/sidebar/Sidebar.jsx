@@ -5,12 +5,21 @@ export default function Sidebar() {
   return (
     <div className="sidebar">
         <div className="sidebarItem">
-            <span className="sidebarTitle">ABOUT ME</span>
-            <img src="./image.png" alt="ong" />
-            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Magnam consequatur beatae recusandae accusamus quasi eligendi 
-                sit atque exercitationem asperiores dolorem, tenetur quis 
-                necessitatibus, possimus eius! Atque aliquid quod officia itaque!
+            <span className="sidebarTitle">SOBRE NÓS</span>
+            <img src="./image copy.png" alt="ong" />
+            <h3>Conecta ONG</h3>
+            <p> 
+                Nosso projeto tem como objetivo conectar a população 
+                e empresas aos serviços prestados por Organizações 
+                Não Governamentais (ONGs) localizadas em Paraíso do Tocantins 
+                e regiões adjacentes. 
+                <br/> 
+                <br/> 
+                O projeto visa aumentar a 
+                visibilidade de eventos, campanhas, interações e doações 
+                realizadas pelas ONGs, promovendo assim maior engajamento 
+                social e transparência nas ações dessas organizações.
+
             </p>
         </div>
         <div className="sidebarItem">
