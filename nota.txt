@@ -1,0 +1,15 @@
+[
+    {
+        title: "strig",
+        content: "strig",
+        author:"strig",
+        date: "nubem",
+        image: "url",
+        link:"strig",
+        facebook:"strig",
+        twittle:"strig",
+        instagram:"strig",
+        whatsApp:"nubem",
+        fone:"nubem",
+    },
+]

@@ -6,7 +6,7 @@ export default function Sidebar() {
     <div className="sidebar">
         <div className="sidebarItem">
             <span className="sidebarTitle">SOBRE NÓS</span>
-            <img src="./image copy.png" alt="ong" />
+            <img src="./image copy.png" alt="ong" className="sidebarImg"/>
             <h3>Conecta ONG</h3>
             <p> 
                 Nosso projeto tem como objetivo conectar a população 
@@ -25,12 +25,12 @@ export default function Sidebar() {
         <div className="sidebarItem">
             <span className="sidebarTitle">CATEGORIES</span>
             <ul className="sidebarlist">
-                <li className="sidebarListItem">Life</li>
-                <li className="sidebarListItem">Music</li>
-                <li className="sidebarListItem">Style</li>
-                <li className="sidebarListItem">Sport</li>
-                <li className="sidebarListItem">Tech</li>
-                <li className="sidebarListItem">Cinema</li>
+                <li className="sidebarListItem">Saúde</li>
+                <li className="sidebarListItem">Educação</li>
+                <li className="sidebarListItem">Animais</li>
+                <li className="sidebarListItem">Caridade</li>
+                <li className="sidebarListItem">Projetos</li>
+                <li className="sidebarListItem">Doações</li>
             </ul>
         </div>
         <div className="sidebarItem">
