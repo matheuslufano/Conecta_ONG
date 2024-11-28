@@ -3,8 +3,15 @@ const dados = [
     {
         title: "Campanha contra a fome - Ação Cidadania",
         date: "2024-11-20",
-        content: "A ONG Ação Cidadania está promovendo uma campanha nacional para arrecadar alimentos e combater a fome em comunidades carentes. Mais de 500 toneladas de alimentos já foram distribuídas, mas a meta é alcançar 1.000 toneladas até o final do ano. Participe e faça a diferença!",
         image: "https://observatorio3setor.org.br/wp-content/uploads/2023/10/fotos-dimensionadas-p-site-9-1.png",
+        content: 
+        <p>
+            A ONG Ação Cidadania está liderando uma importante iniciativa nacional para combater a fome e garantir o direito básico à alimentação em comunidades carentes. A fome é um problema que atinge milhões de brasileiros, intensificado por crises econômicas e sociais. Diante desse cenário, a campanha visa arrecadar alimentos e distribuí-los para famílias em situação de vulnerabilidade, levando esperança e dignidade a quem mais precisa. <br/> 
+            <br/> Com um trabalho intenso e apoio de milhares de voluntários, a ONG já conseguiu distribuir mais de 500 toneladas de alimentos em diversas regiões do país. Esse marco representa mais do que números; simboliza vidas impactadas, crianças com refeições em suas mesas e famílias que podem vislumbrar um futuro mais justo. No entanto, a luta não para por aí. A meta é ambiciosa: alcançar 1.000 toneladas de alimentos até o final do ano. E, para isso, a participação da sociedade é indispensável. <br/> 
+            <br/> A campanha vai além da simples doação de alimentos. Ela busca conscientizar a população sobre a gravidade da fome no Brasil, mobilizando cidadãos e empresas a se tornarem agentes de transformação social. A fome não é apenas a falta de comida; é a ausência de condições mínimas para viver com dignidade. Nesse contexto, cada gesto solidário, por menor que pareça, contribui para transformar a realidade de quem enfrenta essa dura batalha. <br/> 
+            <br/> Para participar, você pode doar alimentos não perecíveis nos pontos de arrecadação distribuídos em diversas cidades ou realizar contribuições financeiras diretamente pelo site da ONG. Empresas também são convidadas a aderir, seja por meio de doações em larga escala ou pelo apoio logístico para distribuir os alimentos arrecadados. Além disso, a campanha incentiva o engajamento nas redes sociais, promovendo a causa e inspirando outras pessoas a fazerem parte desse movimento. <br/> 
+            <br/> A solidariedade é a chave para combater problemas tão profundos quanto a fome. Ao participar da campanha da Ação Cidadania, você não apenas ajuda a encher pratos vazios, mas também contribui para fortalecer os laços de empatia e humanidade que unem a sociedade. Não deixe para depois: sua contribuição pode ser o que falta para alcançar a meta e transformar vidas. Junte-se à Ação Cidadania e faça a diferença agora! <br/> 
+        </p>
     },
     {
         title: "Proteção de Animais - SOS Mata Atlântica",
