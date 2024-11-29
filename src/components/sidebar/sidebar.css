@@ -1,8 +1,8 @@
 .sidebar{
     flex: 3;
-    margin: 20px;
+    margin: 15px;
     padding-bottom: 30px;
-    background-color: #f0eaea;
+    background-color: #ff0303;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
