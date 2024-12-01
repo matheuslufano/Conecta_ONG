@@ -26,7 +26,7 @@ export default function SinglePost() {
                     </span>
                     <span className="singlePostDate">{post.date || "Unknown date"}</span>
                 </div>
-                <p className="singlePostDesc">
+                <p className="singlePostDesc" style={{textAlign:"justify"}}>
                     {post.content}
                 </p>
             </div>

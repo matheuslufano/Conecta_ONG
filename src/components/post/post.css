@@ -54,3 +54,19 @@
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
 }
+
+/* celulares */
+
+@media(max-width: 450px) {
+    .post{
+        width: 100%;
+        margin: 0px 25px 40px 25px;
+    }
+
+    .postImg{
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+        border-radius: 7px;
+    }
+  }

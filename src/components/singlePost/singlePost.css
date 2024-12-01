@@ -5,6 +5,8 @@
 .singlePostWrapper {
     padding: 20px;
     padding-right: 0;
+    margin: 0% 7% 10% 7%;
+    
 }
 
 .singlePostImg {
@@ -25,6 +27,7 @@
 .singlePostEdit {
     float: right;
     font-size: 16px;
+
 }
 
 .singlePostIcon {
@@ -51,8 +54,10 @@
 
 .singlePostDesc {
     color: #666;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 25px;
+    margin: 2%;
+
 }
 
 .singlePostDesc::first-letter {
@@ -114,4 +119,4 @@
       font-size: 26px; /* Ajusta o tamanho da primeira letra */
     }
   }
-  
+
