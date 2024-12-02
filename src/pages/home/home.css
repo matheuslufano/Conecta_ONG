@@ -1,5 +1,12 @@
 .home{
-    display: flexbox;
-    justify-content: space-between;
+    display: flex;
+}
 
+@media(max-width: 500px) {
+    .home{
+        display: flexbox;
+        justify-content: space-between;
+
+
+    }
 }
