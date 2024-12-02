@@ -1,34 +1,40 @@
 import Post from "../post/Post"
 import dados from '../dados';
+import { useState } from "react";
 import "./posts.css"
 
 export default function Posts() {
 
-    return (
+  return (
     <div className="posts">
       {dados.map((post, index) => {
         return (
           console.log(post),
           <div className="post" key={index}>
             <div className="postunico">
-              <a rel="stylesheet" style={{ textDecoration: "none", color: "inherit" }} href="/post">
               <img
                 src={post.image}
-                alt={post.title} // Usando o título como texto alternativo
+                alt={post.title}
                 className="postImg"
+                // onClick={() => {
+                //   window.location.href = `/post/${post.id}`;
+                // }}
               />
               <div className="postInfo">
                 <div className="postCats">
                 </div>
                 <span className="postDate">{post.date}</span>
-                <span className="postTitle">{post.title}</span>
+                <span className="postTitle">
+                  <a rel="stylesheet" style={{ textDecoration: "none", color: "inherit" }} href="/post">
+                  {post.title}
+                  </a>
+                </span>
                 <p className="postDesc">{post.content}</p>
               </div>
-              </a>
             </div>
           </div>
         );
       })}
     </div>
-    )
+  )
 }

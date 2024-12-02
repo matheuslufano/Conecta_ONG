@@ -1,8 +1,8 @@
 import "./singlePost.css";
 import dados from "../dados";
+import { useState } from "react";
 
 export default function SinglePost() {
-    // Acesse o item do array pelo índice desejado (exemplo: índice 0)
     const post = dados[0];
 
     return (
