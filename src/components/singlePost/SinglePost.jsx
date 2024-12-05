@@ -13,13 +13,23 @@ interface iPost extends DialogProps {
 export default function SinglePost(props: iPost) {
   const { title, content, date, image, author, open, onClose } = props;
   return (
-    <Dialog maxWidth={"lg"} fullWidth open={open} onClose={onClose}>
+    <Dialog 
+      sx={{ "& .MuiDialog-paper": { borderRadius: 4 }, backdropFilter: "blur(5px)" }}
+        maxWidth={"lg"}
+        fullWidth
+        open={open}
+        onClose={onClose}>
       <div className="singlePost">
         <div className="singlePostWrapper">
           <img
             src={image}
             alt={title}
             className="singlePostImg"
+            style={{
+              height: '500px',
+              objectFit: 'cover',
+              borderRadius: 7.5,
+             }}
           />
           <h1 className="singlePostTitle">
             {title}

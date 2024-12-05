@@ -29,13 +29,13 @@ export default function Posts() {
       )}
       <Grid container spacing={2} className="posts" sx={{ py: 10}}>
         {dados.map((post, index) => (
-          <Grid item xs={12} sm={12} md={4} key={index}>
+          <Grid item sm={12} md={4} key={index}>
             <Box
-              sx={{ cursor: "pointer", 
-                border: '1px solid #ddd', 
-                borderRadius: 5, 
-                overflow: 'hidden', 
-                transition: 'transform 0.2s', 
+              sx={{ cursor: "pointer",
+                border: '1px solid #ddd',
+                borderRadius: 5,
+                overflow: 'hidden',
+                transition: 'transform 0.2s',
                 '&:hover': { transform: 'scale(1.05)' } 
               }}
               onClick={() => handleOpenPost(post)}
@@ -45,7 +45,12 @@ export default function Posts() {
                   src={post.image}
                   alt={post.title}
                   className="postImg"
-                  style={{ width: '100%', height: '200px', objectFit: 'cover', borderBottom: '1px solid #ddd' }}
+                  style={{ width: '100%',
+                    height: '400px',
+                    objectFit: 'cover',
+                    borderBottom: '1px solid #ddd',
+                    borderRadius: 7.5,
+                  }}
                 />
                 <div className="postInfo" style={{ padding: '1rem' }}>
                   <div className="postCats">
