@@ -1,35 +1,45 @@
 import "./singlePost.css";
-import dados from "../dados";
-import { useState } from "react";
+import { Dialog, DialogProps } from "@mui/material";
 
-export default function SinglePost() {
-    const post = dados[0];
-
-    return (
-        <div className="singlePost">
-            <div className="singlePostWrapper">
-                <img
-                    src={post.image}
-                    alt={post.title} // Usando o título como texto alternativo
-                    className="singlePostImg"
-                />
-                <h1 className="singlePostTitle">
-                    {post.title}
-                    <div className="singlePostEdit">
-                        <i className="singlePostIcon fa-solid fa-pen-to-square"></i>
-                        <i className="singlePostIcon fa-solid fa-trash-can"></i>
-                    </div>
-                </h1>
-                <div className="singlePostInfo">
-                    <span className="singlePostAuthor">
-                        Author: <b>{post.author || "Unknown"}</b>
-                    </span>
-                    <span className="singlePostDate">{post.date || "Unknown date"}</span>
-                </div>
-                <p className="singlePostDesc" style={{textAlign:"justify"}}>
-                    {post.content}
-                </p>
-            </div>
-        </div>
-    );
+interface iPost extends DialogProps {
+  title: string;
+  content: string;
+  date: string;
+  image: string;
+  author?: string;
+  onClose: () => void;
 }
+
+export default function SinglePost(props: iPost) {
+  const { title, content, date, image, author, open, onClose } = props;
+  return (
+    <Dialog maxWidth={"lg"} fullWidth open={open} onClose={onClose}>
+      <div className="singlePost">
+        <div className="singlePostWrapper">
+          <img
+            src={image}
+            alt={title}
+            className="singlePostImg"
+          />
+          <h1 className="singlePostTitle">
+            {title}
+            <div className="singlePostEdit">
+              <i className="singlePostIcon fa-solid fa-pen-to-square"></i>
+              <i className="singlePostIcon fa-solid fa-trash-can"></i>
+            </div>
+          </h1>
+          <div className="singlePostInfo">
+            <span className="singlePostAuthor">
+              Author: <b>{author || "Unknown"}</b>
+            </span>
+            <span className="singlePostDate">{date || "Unknown date"}</span>
+          </div>
+          <p className="singlePostDesc" style={{ textAlign: "justify" }}>
+            {content}
+          </p>
+        </div>
+      </div>
+    </Dialog>
+  );
+}
+
